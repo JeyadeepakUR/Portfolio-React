@@ -51,10 +51,8 @@ export const NavBar = () => {
               <Nav.Link className={activeLink === 'resume' ? 'active navbar-link' : 'navbar-link'}
               onClick={() => {
               window.open(resume, "_blank");
-              }}
-        >
+              }}></Nav.Link>
           Resume
-        </NavLink>
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
