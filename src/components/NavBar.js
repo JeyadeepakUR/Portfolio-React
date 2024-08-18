@@ -8,6 +8,7 @@ import { HashLink } from 'react-router-hash-link';
 import {
   BrowserRouter as Router
 } from "react-router-dom";
+import resume from '../JeyadeepakURResume.pdf'
 
 export const NavBar = () => {
 
@@ -47,7 +48,13 @@ export const NavBar = () => {
               <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
               <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Skills</Nav.Link>
               <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
-              <Nav.Link href="/JeyadeepakURResume.pdf" className={activeLink === 'resume' ? 'active navbar-link' : 'navbar-link'} download = "MyPortfolio.pdf">Resume</Nav.Link>
+              <Nav.Link className={activeLink === 'resume' ? 'active navbar-link' : 'navbar-link'}
+              onClick={() => {
+              window.open(resume, "_blank");
+              }}
+        >
+          Resume
+        </NavLink>
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
