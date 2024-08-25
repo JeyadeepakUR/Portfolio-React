@@ -36,10 +36,17 @@ body {
   font-family: 'Centra', sans-serif !important;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h5, h6 {
   margin: 0;
   padding: 0;
   line-height: normal;
+}
+
+h4{
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  color: #fff;
 }
 
 p, a, li, button, ul {
@@ -235,7 +242,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner {
   margin-top: 0;
   padding: 260px 0 100px 0;
-  background-image: url('./assets/img/banner-bg.png');
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -307,11 +313,50 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   position: relative;
 }
 .skill-bx {
-  background: #151515;
-  border-radius: 64px;
+  background: #090909;
+  padding: 30px;
+  border-radius: 8px;
   text-align: center;
-  padding: 60px 50px;
-  margin-top: -60px;
+  position: relative;
+}
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.skill-item {
+  width: 200px;
+  text-align: center;
+}
+
+.skill-item img {
+  width: 60px;
+  height: auto;
+  margin-bottom: 10px;
+}
+.progress {
+  background-color: #dfd0d0;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 10px;
+  margin-top: 10px;
+}
+
+.progress-bar {
+  background-color: #007bff;
+  height: 100%;
+  transition: width 0.4s ease;
+}
+
+.background-image-left {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0.2; /* Optional for subtle effect */
 }
 .skill h2 {
 	font-size: 45px;
@@ -345,7 +390,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .project {
   padding: 80px 0;
   position: relative;
-  background-color: black;
 }
 .project h2 {
 	font-size: 45px;
@@ -457,6 +501,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 400;
   font-size: 15px;
   letter-spacing: 0.8px;
+  color: #B8B8B8;
 }
 .background-image-right {
   top: 20%;
@@ -542,7 +587,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************ Footer Css ************/
 .footer {
   padding: 0 0 50px 0;
-  background-image: url('./assets/img/footer-bg.png');
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
